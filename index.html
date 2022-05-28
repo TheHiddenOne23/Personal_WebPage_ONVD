@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Home</title>
+
+</head>
+
+<body>
+
+<nav>
+
+    <div class="heading">
+        <img width="50%" src="logo.png" class="logo">
+    </div>
+
+    <ul class="nav-links">
+
+        <li><a class="active" href="index.html">HOME</a></li>
+        <li><a href="about_me.html">ABOUT</a></li>
+        <li><a href="pages/services.html">SERVICES</a></li>
+        <li><a href="pages/contact.html">CONTACT</a></li>
+
+    </ul>
+
+</nav>
+
+</div>
+<div class="body-text">
+    <div class="body-text-left">
+        <p class="body-text-1">Hi,</p>
+        <p class="body-text-2">I'm Gorgi,</p>
+        <p class="body-text-3">Web Developer.</p>
+        <p class="body-text-4">Wordpress/HTML/CSS/Javascript</p>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script>
+            var textWrapper = document.querySelector('.body-text-2');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+            anime.timeline({loop: false})
+                .add({
+                    targets: '.body-text-2 .letter',
+                    opacity: [0,1],
+                    delay: (el, i) => 500 + 40 * i
+                });
+        </script>
+        <script>
+            var textWrapper = document.querySelector('.body-text-3');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+            anime.timeline({loop: false})
+                .add({
+                    targets: '.body-text-3 .letter',
+                    opacity: [0,1],
+                    delay: (el, i) => 1300 + 40 * i
+                });
+        </script>
+        <script>
+            var textWrapper = document.querySelector('.body-text-4');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+            anime.timeline({loop: false})
+                .add({
+                    targets: '.body-text-4 .letter',
+                    opacity: [0,1],
+                    delay: (el, i) => 1820 + 40 * i
+                });
+        </script>
+
+    </div>
+    <div class="body-text-right">
+        <img class="image-me" src="blur_edges.jpg">
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <ul class="socials">
+            <li><a href=""><img src="fb.png"></a></li>
+            <li><a href=""><img src="insta.png"></a></li>
+            <li><a href=""></i><img src="twitter.png"></a></li>
+            <li><a href=""></i><img src="gmail.png"></a></li>
+        </ul>
+        <h3>Gorgi Sivevski</h3>
+        <p></p>
+    </div>
+</footer>
+</body>
+
+
+</html>
